@@ -7,8 +7,26 @@ $darker-grey: rgba(170, 170, 170, 1);
 $grey: rgba(215, 222, 234, 1);
 $brown: rgba(175, 115, 74, 1);
 
+//Client colors
+
+//UNity Support
+
 // FONTS --
 
-// $ff-h1: font-family: 'Playfair Display', serif;
-// $ff-p: 'League Spartan', sans-serif;
-// $ff-a:
+$ff-h1: "Playfair Display", serif;
+$ff-p: "League Spartan", sans-serif;
+$ff-nav: "Playfair Display", serif;
+$ff-a: "League Spartan", sans-serif;
+
+// Font weights
+
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 700;
+
+// Section Widths
+
+$header-width: 7.81rem 15% 7.81rem 15%;
+$hero-width: 7.81rem 15% 7.81rem 15%;
+$intro-text-width: 7.81rem 15% 7.81rem 15%;

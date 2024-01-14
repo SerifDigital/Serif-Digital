@@ -13,14 +13,16 @@
 // @import "./utils/extensions";
 @import "./utils/variables";
 
-// @import "./base/base";
-// @import "./base/typography";
+@import "./base/main";
+@import "./base/reset";
+@import "./base/typography";
 
 // @import "./components/buttons";
 
 @import "./layouts/header";
 
-// @import "./layouts/nav";
+@import "./layouts/nav";
+@import "./layouts/footer";
 // @import "./layouts/container";
 // @import "./layouts/form";
 
@@ -42,5 +44,3 @@
 // Themes
 
 // USE THESE BELOW BEN
-
-// @import "./utils/variables";
