@@ -1,8 +1,8 @@
 body {
 	font-family: $ff-p;
 	font-weight: $normal;
-	color: $off-black-grey; //color variable set elsewhere
-	background: $off-white-cream-bg;
+	color: $off-black-grey-p; //color variable set elsewhere
+	background: $grey-bg-0;
 	-webkit-text-size-adjust: 100%; //fix for iOS
 }
 
@@ -14,7 +14,7 @@ body {
 
 h1 {
 	font-family: $ff-h1;
-	color: $off-black-grey;
+	color: $off-black-grey-p;
 	font-size: 4rem;
 	font-style: normal;
 	font-weight: 400;
@@ -28,7 +28,7 @@ h1 {
 	width: 400px;
 	height: 17px;
 	margin-top: 25px;
-	background-color: $ye;
+	background-color: $yellow-cta;
 }
 
 // intro text
@@ -37,13 +37,12 @@ h1 {
 	margin: $intro-text-width;
 
 	p {
-		font-size: 18px;
-		color: $off-black-grey;
+		color: $off-black-grey-p;
 
 		font-size: 18px;
 		font-style: normal;
 		font-weight: $normal;
-		line-height: 151%;
+		line-height: 151%; /* 27.18px */
 		letter-spacing: 0.54px;
 	}
 }
