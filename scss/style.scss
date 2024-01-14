@@ -8,8 +8,25 @@
 // Londrina h1
 // nimbus p
 
+// @import "./utils/functions";
+// @import "./utils/mixins";
+// @import "./utils/extensions";
 @import "./utils/variables";
-@import "./layout/form";
+
+// @import "./base/base";
+// @import "./base/typography";
+
+// @import "./components/buttons";
+
+@import "./layouts/header";
+
+// @import "./layouts/nav";
+// @import "./layouts/container";
+// @import "./layouts/form";
+
+// @import "./pages/work";
+// @import "./pages/about";
+// @import "./pages/project";
 
 // layout order below
 // Utils:
@@ -24,23 +41,6 @@
 // Pages
 // Themes
 
-//USE THESE BELOW BEN
+// USE THESE BELOW BEN
 
 // @import "./utils/variables";
-// @import "./utils/functions";
-// @import "./utils/mixins";
-// @import "./utils/extensions";
-
-// @import "./base/base";
-// @import "./base/typography";
-
-// @import "./components/buttons";
-
-// @import "./layouts/header";
-// @import "./layouts/nav";
-// @import "./layouts/container";
-// @import "./layouts/form";
-
-// @import "./pages/work";
-// @import "./pages/about";
-// @import "./pages/project";
