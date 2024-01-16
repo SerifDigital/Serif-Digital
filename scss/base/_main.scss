@@ -1,6 +1,6 @@
 body {
 	font-family: $ff-p;
-	font-weight: $normal;
+	font-weight: $fw-normal;
 	color: $off-black-grey-p; //color variable set elsewhere
 	background: $grey-bg-0;
 	-webkit-text-size-adjust: 100%; //fix for iOS
@@ -41,8 +41,17 @@ h1 {
 
 		font-size: 18px;
 		font-style: normal;
-		font-weight: $normal;
+		font-weight: $fw-normal;
 		line-height: 151%; /* 27.18px */
 		letter-spacing: 0.54px;
 	}
+}
+
+//intro text formatting
+.span-space {
+	margin-left: 40%;
+}
+
+.intro-text span {
+	font-weight: $fw-bold;
 }

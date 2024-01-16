@@ -4,17 +4,17 @@
 	color: $off-white-cream-bg;
 
 	.cta-wrapper {
-		margin: $hero-width;
-		padding: 30px;
+		padding: 40px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 
-		&:left {
+		&__left {
 			h3 {
 				color: $off-white-cream-bg;
 				font-size: 32px;
 				font-style: normal;
-				font-weight: $normal;
+				font-weight: $fw-normal;
+				padding-right: 50px;
 			}
 
 			p {
@@ -22,7 +22,9 @@
 			}
 		}
 
-		&:right {
+		&__right {
+			width: 546px;
+
 			p {
 				font-size: 16px;
 			}
@@ -30,7 +32,7 @@
 	}
 }
 
-.cta-container__right > div {
+.cta-wrapper__right > div {
 	display: flex;
 	gap: 14px;
 }
