@@ -4,9 +4,8 @@
 	color: $off-white-cream-bg;
 
 	.cta-wrapper {
-		padding: 40px;
-		display: flex;
-		justify-content: center;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 
 		&__left {
 			h3 {
@@ -23,8 +22,6 @@
 		}
 
 		&__right {
-			width: 546px;
-
 			p {
 				font-size: 16px;
 			}
@@ -35,4 +32,7 @@
 .cta-wrapper__right > div {
 	display: flex;
 	gap: 14px;
+	border-bottom: 2px solid black;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
