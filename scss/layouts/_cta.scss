@@ -6,12 +6,13 @@
 	.cta-wrapper {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		padding: 70px;
 
 		&__left {
 			display: grid;
-			gap: 60px;
+			gap: 50px;
 			margin-left: 10%;
+			padding: 70px;
+
 			h3 {
 				color: $off-white-cream-bg;
 				font-size: 32px;
@@ -26,6 +27,11 @@
 		}
 
 		&__right {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 15px;
+
 			p {
 				font-size: 16px;
 				font-size: $fs-400;
@@ -33,21 +39,48 @@
 				font-weight: $fw-normal;
 				line-height: 22.4px;
 				letter-spacing: 1.08px;
-				padding-top: 10px;
 			}
+
+			a {
+				color: $yellow-cta;
+				transition: 0.3s ease;
+
+				&:hover {
+					color: $darker-grey;
+				}
+			}
+
+			> div {
+				display: flex;
+				gap: 16px;
+			}
+
+			hr {
+				width: 75%;
+				align-self: center;
+			}
+
+			// 	div:nth-of-type(1) {
+			// 		padding-bottom: 20px;
+			// 	}
+
+			// 	div:nth-child(2) {
+			// 		padding-bottom: 20px;
+			// 	}
+			// div:nth-child(3) {
+			// 	padding-bottom: 20px;
+			// }
+
+			// 	hr {
+			// 		margin-bottom: 20px;
+			// 	}
+			// }
 		}
 	}
 }
 
-.cta-wrapper__right > div {
-	display: flex;
-	gap: 14px;
-	border-bottom: 2px solid $yellow-cta;
-	padding-top: 20px;
-	padding-bottom: 20px;
+//Icon
+.material-symbols-outlined {
+	font-size: 55px;
+	text-align: center;
 }
-
-// .icon {
-// 	height: 100px;
-// 	width: 100px;
-// }
