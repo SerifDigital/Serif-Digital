@@ -4,14 +4,18 @@
 	color: $off-white-cream-bg;
 
 	.cta-wrapper {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		// display: grid;
+		// grid-template-columns: repeat(2, 1fr);
+		display: flex;
+		justify-content: center;
+		margin: $hero-width;
 
 		&__left {
 			display: grid;
 			gap: 50px;
-			margin-left: 10%;
+			// margin-left: 20%;
 			padding: 70px;
+			width: 50%;
 
 			h3 {
 				color: $off-white-cream-bg;
@@ -31,14 +35,19 @@
 			flex-direction: column;
 			justify-content: center;
 			gap: 15px;
+			width: 50%;
+			// margin-right: 20%;
 
 			p {
+				width: 80%;
 				font-size: 16px;
 				font-size: $fs-400;
 				font-style: normal;
 				font-weight: $fw-normal;
 				line-height: 22.4px;
 				letter-spacing: 1.08px;
+
+				align-self: center;
 			}
 
 			a {
@@ -58,6 +67,7 @@
 			hr {
 				width: 75%;
 				align-self: center;
+				color: $darker-grey;
 			}
 
 			// 	div:nth-of-type(1) {
