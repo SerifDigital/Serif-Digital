@@ -1,13 +1,3 @@
-// 242424 off black grey
-// FAF9F6 off white cream bg
-// FFFFF2 off white
-// AAAAAA darker grey
-// D7DEEA grey
-// AF734A brown
-
-// Londrina h1
-// nimbus p
-
 // @import "./utils/functions";
 // @import "./utils/mixins";
 // @import "./utils/extensions";
@@ -25,11 +15,10 @@
 // @import "./layouts/container";
 // @import "./layouts/form";
 
-// @import "./pages/work";
-// @import "./pages/about";
-// @import "./pages/project";
+@import "./pages/about.scss";
+@import "./pages/contact.scss";
 
-// layout order below
+// SCSS Folder architecture layout
 // Utils:
 // Variables
 // Functions

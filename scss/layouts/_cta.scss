@@ -4,16 +4,14 @@
 	color: $off-white-cream-bg;
 
 	.cta-wrapper {
-		// display: grid;
-		// grid-template-columns: repeat(2, 1fr);
 		display: flex;
 		justify-content: center;
-		margin: $hero-width;
+		margin: $cta-width;
 
 		&__left {
 			display: grid;
 			gap: 50px;
-			// margin-left: 20%;
+
 			padding: 70px;
 			width: 50%;
 
@@ -36,7 +34,6 @@
 			justify-content: center;
 			gap: 15px;
 			width: 50%;
-			// margin-right: 20%;
 
 			p {
 				width: 80%;
@@ -69,22 +66,6 @@
 				align-self: center;
 				color: $darker-grey;
 			}
-
-			// 	div:nth-of-type(1) {
-			// 		padding-bottom: 20px;
-			// 	}
-
-			// 	div:nth-child(2) {
-			// 		padding-bottom: 20px;
-			// 	}
-			// div:nth-child(3) {
-			// 	padding-bottom: 20px;
-			// }
-
-			// 	hr {
-			// 		margin-bottom: 20px;
-			// 	}
-			// }
 		}
 	}
 }
