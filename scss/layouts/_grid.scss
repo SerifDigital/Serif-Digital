@@ -9,28 +9,24 @@
 }
 
 .grid {
-	border: 3px solid black;
-
-	img {
-		object-fit: cover;
-	}
+	border: 2px solid black;
 }
 
 .grid-tl {
 	// Unity Support
 	grid-column: 1/3;
-	// background-color: $dark-blue-secondary;
 	background-image: url(/assets/client-screenshots/unity_support_600x261.png);
 	background-size: cover;
-	background-repeat: no-repeat;
+
+	&:hover {
+		cursor: pointer;
+	}
 }
 .grid-tm {
-	//FYLO
+	//Social-media-component-card
 	grid-column: 3/4;
 	background-image: url(/assets/client-screenshots/blog-preview-card_600x412.png);
 	background-size: cover;
-	background-repeat: no-repeat;
-	// background-color: $yellow-cta;
 }
 .grid-as {
 	//Urban Canvas
@@ -38,8 +34,6 @@
 	grid-row: 1/4;
 	background-image: url(/assets/client-screenshots/urban-canvas_572x1235.png);
 	background-size: cover;
-	background-repeat: no-repeat;
-	// background-color: $dark-blue-secondary;
 }
 .grid-ml {
 	//TypeMaster
@@ -47,107 +41,16 @@
 	grid-row: 2/4;
 	background-image: url(/assets/client-screenshots/typemaster_500x775.png);
 	background-size: cover;
-	background-repeat: no-repeat;
-	// background-color: $darker-grey;
 }
 .grid-mm {
 	//News Site
 	grid-column: 2/4;
-	background-image: url(/assets/client-screenshots/unity_support_600x261.png);
+	background-image: url(/assets/client-screenshots/webcritic_700x354.png);
 	background-size: cover;
-	background-repeat: no-repeat;
-	// background-color: $dark-blue-secondary;
 }
 .grid-bm {
 	// Webcritic
 	grid-column: 2/4;
-	background-image: url(/assets/client-screenshots/unity_support_600x261.png);
+	background-image: url(/assets/client-screenshots/news-site_600x312.png);
 	background-size: cover;
-	background-repeat: no-repeat;
-	// background-color: $brown;
 }
-
-//CROPPED IMAGES GRID
-
-// .grid-showcase {
-// 	max-width: 1140px;
-// 	height: 740px;
-// 	margin: 50px auto;
-// 	display: grid;
-// 	grid-template-areas:
-// 		"grid-tl grid-tl grid-tm grid-as"
-// 		"grid-ml grid-mm grid-mm grid-as"
-// 		"grid-ml grid-bm grid-bm grid-as";
-// }
-
-// .grid-tl {
-// 	grid-area: grid-tl;
-// }
-// .grid-tm {
-// 	grid-area: grid-tm;
-// }
-// .grid-as {
-// 	grid-area: grid-as;
-// }
-// .grid-ml {
-// 	grid-area: grid-ml;
-// }
-// .grid-mm {
-// 	grid-area: grid-mm;
-// }
-// .grid-bm {
-// 	grid-area: grid-bm;
-// }
-
-//FIRST ATTEMPT
-
-// .grid-showcase {
-// 	max-width: 1140px;
-// 	height: 740px;
-// 	margin: 50px auto;
-
-// 	display: grid;
-// 	grid-template-areas:
-// 		"grid-tl grid-tl grid-tm grid-as"
-// 		"grid-ml grid-mm grid-mm grid-as"
-// 		"grid-ml grid-bm grid-bm grid-as";
-
-// 	section {
-// 		overflow: hidden;
-// 	}
-
-// 	// img {
-// 	// 	object-fit: cover;
-// 	// }
-// }
-
-// .grid-tl {
-// 	grid-area: grid-tl;
-// 	width: 515px;
-// 	height: 210px;
-// }
-// .grid-tm {
-// 	grid-area: grid-tm;
-// 	width: 340px;
-// 	height: 210px;
-// }
-// .grid-as {
-// 	grid-area: grid-as;
-// 	width: 224px;
-// 	height: 743px;
-// }
-// .grid-ml {
-// 	grid-area: grid-ml;
-// 	width: 288px;
-// 	height: 493px;
-// }
-// .grid-mm {
-// 	grid-area: grid-mm;
-// 	width: 560px;
-// 	height: 230px;
-// }
-// .grid-bm {
-// 	grid-area: grid-bm;
-// 	width: 560px;
-// 	height: 230px;
-// }
