@@ -10,6 +10,7 @@
 
 .grid {
 	border: 2px solid black;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .grid-tl {
@@ -45,12 +46,12 @@
 .grid-mm {
 	//News Site
 	grid-column: 2/4;
-	background-image: url(/assets/client-screenshots/webcritic_700x354.png);
+	background-image: url(/assets/client-screenshots/news-site_600x312.png);
 	background-size: cover;
 }
 .grid-bm {
 	// Webcritic
 	grid-column: 2/4;
-	background-image: url(/assets/client-screenshots/news-site_600x312.png);
+	background-image: url(/assets/client-screenshots/webcritic_700x354.png);
 	background-size: cover;
 }
