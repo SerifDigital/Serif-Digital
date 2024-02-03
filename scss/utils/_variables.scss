@@ -1,38 +1,84 @@
-// COLORS --
+/*======================================
+*            COLORS                    *
+======================================*/
 
-$off-black-grey-p: hsl(0, 0%, 14%);
-$off-white-cream-bg: rgba(250, 249, 246, 1);
-$off-white: rgba(255, 255, 242, 1);
-$grey-bg-0: hsl(0, 5%, 90%);
-$darker-grey: hsl(0, 2%, 58%);
-$dark-blue-secondary: hsl(205, 31%, 30%);
-$yellow-cta: hsl(46, 100%, 58%);
-$brown: hsl(25, 38%, 47%);
-$off-black: hsl(0, 0%, 8%);
+// Primary - Main
+$grey-bg: #e7e4e4;
+$darker-grey: #969292;
+$blue-secondary: #355064;
+$yellow: #ffcd29;
+$red-arterial-blood-: #771717;
 
-//Client colors
+// Shade - Primary
+$off-black: #141414;
+$off-black-grey-p: #242424;
+$off-white: #fffff2;
 
-//Unity Support
+// PRIMARY TINTS
 
-// FONTS --
+// Tints of Main Background Color
+$mb-tint-100: rgba(217, 217, 217, 1);
+$mb-tint-200: rgba(195, 195, 195, 1);
+$mb-tint-300: rgba(173, 173, 173, 1);
+$mb-tint-400: rgba(151, 151, 151, 1);
+$mb-tint-500: rgba(130, 130, 130, 1);
+$mb-tint-600: rgba(108, 108, 108, 1);
 
+// Tints of Off-black
+$ob-tint-100: rgba(20, 20, 20, 1);
+$ob-tint-200: rgba(43, 43, 43, 1);
+$ob-tint-300: rgba(66, 66, 66, 1);
+$ob-tint-400: rgba(90, 90, 90, 1);
+$ob-tint-500: rgba(114, 114, 114, 1);
+$ob-tint-600: rgba(137, 137, 137, 1);
+
+// Tints of Yellow
+$y-tint-100: rgba(250, 199, 52, 1);
+$y-tint-200: rgba(250, 204, 72, 1);
+$y-tint-300: rgba(251, 210, 92, 1);
+$y-tint-400: rgba(251, 215, 112, 1);
+$y-tint-500: rgba(252, 221, 133, 1);
+$y-tint-600: rgba(252, 227, 153, 1);
+
+// Tints of Arterial Red
+$ar-tint-100: rgba(119, 23, 23, 1);
+$ar-tint-200: rgba(132, 46, 46, 1);
+$ar-tint-300: rgba(146, 69, 69, 1);
+$ar-tint-400: rgba(159, 92, 92, 1);
+$ar-tint-500: rgba(173, 115, 115, 1);
+$ar-tint-600: rgba(187, 139, 139, 1);
+
+// Tints of Secondary Blue
+$sb-tint-100: rgba(47, 72, 88, 1);
+$sb-tint-200: rgba(67, 90, 104, 1);
+$sb-tint-300: rgba(88, 108, 121, 1);
+$sb-tint-400: rgba(109, 126, 138, 1);
+$sb-tint-500: rgba(130, 145, 154, 1);
+$sb-tint-600: rgba(151, 163, 171, 1);
+
+/*======================================
+*            FONTS           *
+======================================*/
+
+// Font Families
 $ff-h1: "Playfair Display", serif;
 $ff-p: "League Spartan", sans-serif;
 $ff-nav: "Playfair Display", serif;
 $ff-a: "League Spartan", sans-serif;
 
-// Font weights
-
+// Font weight
+$fw-hairline: 100;
 $fw-light: 300;
 $fw-normal: 400;
 $fw-semibold: 500;
 $fw-bold: 700;
+$fw-xbold: 900;
 
-// Section Widths
+/*======================================
+*            SECTION WIDTHS            *
+======================================*/
 
-$header-width: 20px 15% 7.81rem 15%;
-$hero-width: 7.81rem 15% 7.81rem 15%;
-$cta-width: 7.81rem 15% 0 15%;
-$intro-text-width: 7.81rem 15% 7.81rem 15%;
-
-$fs-400: 1.125rem;
+$margin-header: 20px 15% 7.81rem 15%;
+$margin-hero: 7.81rem 15% 7.81rem 15%;
+$margin-cta-section: 7.81rem 15% 0 15%;
+$margin-intro-text: 7.81rem 15% 7.81rem 15%;
