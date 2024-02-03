@@ -1,5 +1,5 @@
 .footer {
-	background-color: $yellow-cta;
+	background-color: $yellow;
 	height: 330px;
 	display: flex;
 	align-items: center;
@@ -17,11 +17,11 @@
 	}
 
 	a {
-		color: $dark-blue-secondary;
+		color: $blue-secondary;
 		transition: 0.3s ease;
 
 		&:hover {
-			color: $brown;
+			color: $red-arterial-blood;
 		}
 	}
 }

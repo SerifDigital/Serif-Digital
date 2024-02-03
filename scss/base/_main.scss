@@ -1,18 +1,16 @@
 body {
-	font-family: $ff-p;
-	font-weight: $fw-normal;
 	color: $off-black-grey-p; //color variable set elsewhere
-	background: $grey-bg-0;
+	background: $grey-bg;
 	-webkit-text-size-adjust: 100%; //fix for iOS
 }
 
 //HERO
 
 .hero {
-	margin: $hero-width;
+	margin: $margin-hero;
 }
 
-h1 {
+.hero__h1 {
 	font-family: $ff-h1;
 	color: $off-black-grey-p;
 	font-size: 4rem;
@@ -28,13 +26,13 @@ h1 {
 	width: 400px;
 	height: 17px;
 	margin-top: 25px;
-	background-color: $yellow-cta;
+	background-color: $yellow;
 }
 
 // intro text
 
 .intro-text {
-	margin: $intro-text-width;
+	margin: $margin-intro-text;
 
 	p {
 		color: $off-black-grey-p;

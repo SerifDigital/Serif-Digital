@@ -9,7 +9,7 @@ nav ul li a {
 	display: block;
 	padding: 15px;
 	text-decoration: none;
-	color: $dark-blue-secondary;
+	color: $blue-secondary;
 	font-weight: $fw-normal;
 	text-transform: uppercase;
 	margin: 0 10px;
@@ -20,7 +20,7 @@ nav ul li a:before {
 	transition: all 0.5s;
 }
 nav ul li a:hover {
-	color: $yellow-cta;
+	color: $yellow;
 }
 
 /* stroke */
