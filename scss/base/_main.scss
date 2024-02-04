@@ -53,3 +53,27 @@ body {
 .intro-text span {
 	font-weight: $fw-normal;
 }
+
+.featured-heading {
+	font-family: $ff-h1;
+	font-size: 20px;
+	margin: $margin-featured-work-heading;
+	border-bottom: 4px solid black;
+
+	.span-space {
+		padding: 20px;
+	}
+}
+
+// .icon-inline {
+// 	display: inline-block;
+// 	width: 15px;
+// 	padding: 0;
+// 	margin: 0;
+// }
+
+.fa-solid,
+.fas {
+	font-weight: 600;
+	padding-left: 10px;
+}
