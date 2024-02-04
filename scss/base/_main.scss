@@ -15,7 +15,7 @@ body {
 	color: $off-black-grey-p;
 	font-size: 4rem;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 118%; /* 75.52px */
 	letter-spacing: -3.2px;
 }
@@ -36,10 +36,10 @@ body {
 
 	p {
 		color: $off-black-grey-p;
-
+		font-family: $ff-p;
 		font-size: 18px;
-		font-style: normal;
-		font-weight: $fw-normal;
+
+		font-weight: $fw-light;
 		line-height: 151%; /* 27.18px */
 		letter-spacing: 0.54px;
 	}
@@ -51,5 +51,5 @@ body {
 }
 
 .intro-text span {
-	font-weight: $fw-bold;
+	font-weight: $fw-normal;
 }

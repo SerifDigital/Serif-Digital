@@ -32,16 +32,32 @@
 			<h1>Contact us...</h1>
 			<p>Write us a brief, ask us a question or tell us what you’re looking for in your own words.</p>
 		</section>
+		<!-- see notes for netlifly addition -->
 		<section class="form-container">
-			<!-- For Netifly form, paste following into form parent element below --- method="POST" data-netlify="true" class="form-layout" -->
 			<form class="contact-form" name="contact-form">
 				<div class="form-left">
-					<input type="text" name="name" placeholder="First name" />
-					<input type="email" name="email" placeholder="email" />
+					<div class="firstname" tabindex="1">
+						<label for="firstname"> Your Name </label>
+						<input name="firstname" type="text" placeholder="First name" required />
+					</div>
+
+					<div class="email" tabindex="2">
+						<label for="email"> Email </label>
+						<input name="email" type="text" placeholder="email@domain.com" required />
+					</div>
+
+					<div class="phone">
+						<label for="phone"> Phone </label>
+						<input type="tel" name="phone" placeholder="Phone (Totally optional)" />
+					</div>
 				</div>
 				<div class="form-right">
-					<textarea name="message" placeholder="Click here to leave a message..." class="message-input"></textarea>
-					<input type="submit" value="Say hello." class="contact-button" />
+					<div class="message-field">
+						<label for="message"> Write something below </label>
+						<textarea name="message" placeholder="Click here and start typing..." class="message-input-field" tabindex="3"></textarea>
+					</div>
+
+					<div class="contact-button"><input type="submit" value="Say hello." tabindex="4" /></div>
 				</div>
 			</form>
 		</section>

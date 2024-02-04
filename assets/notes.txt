@@ -1,3 +1,11 @@
+
+NETLIFY FORM
+For Netifly form, paste following into form parent element below --- method="POST" data-netlify="true" class="form-layout" -->
+
+
+
+
+
 2024 Feb 3rd update with new colour scheme and style guide.
 
 Primary COLORS SCSS VARIABLES

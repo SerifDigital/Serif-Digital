@@ -10,7 +10,13 @@
 
 .grid {
 	border: 2px solid black;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	// box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	transition: 0.3s ease-in-out;
+	border-radius: 3px;
+
+	&:hover {
+		border: 5px $blue-secondary solid;
+	}
 }
 
 .grid-tl {
@@ -20,7 +26,7 @@
 	background-size: cover;
 
 	&:hover {
-		cursor: pointer;
+		box-shadow: #64904d 0px 30px 90px;
 	}
 }
 .grid-tm {
@@ -28,6 +34,10 @@
 	grid-column: 3/4;
 	background-image: url(/assets/client-screenshots/blog-preview-card_600x412.png);
 	background-size: cover;
+
+	&:hover {
+		box-shadow: $yellow 0px 30px 90px;
+	}
 }
 .grid-as {
 	//Urban Canvas
@@ -35,6 +45,10 @@
 	grid-row: 1/4;
 	background-image: url(/assets/client-screenshots/urban-canvas_572x1235.png);
 	background-size: cover;
+
+	&:hover {
+		box-shadow: $blue-secondary 0px 30px 90px;
+	}
 }
 .grid-ml {
 	//TypeMaster
@@ -42,16 +56,28 @@
 	grid-row: 2/4;
 	background-image: url(/assets/client-screenshots/typemaster_500x775.png);
 	background-size: cover;
+
+	&:hover {
+		box-shadow: #f16618 0px 30px 90px;
+	}
 }
 .grid-mm {
 	//News Site
 	grid-column: 2/4;
 	background-image: url(/assets/client-screenshots/news-site_600x312.png);
 	background-size: cover;
+
+	&:hover {
+		box-shadow: $blue-secondary 0px 30px 90px;
+	}
 }
 .grid-bm {
 	// Webcritic
 	grid-column: 2/4;
 	background-image: url(/assets/client-screenshots/webcritic_700x354.png);
 	background-size: cover;
+
+	&:hover {
+		box-shadow: #97c4ec 0px 30px 90px;
+	}
 }
