@@ -6,6 +6,10 @@
 	height: 100px;
 	border-bottom: $off-black solid 5px;
 
+	@include breakpoint-mobile {
+		justify-content: center;
+	}
+
 	img {
 		width: 220px;
 		// height: 60px;

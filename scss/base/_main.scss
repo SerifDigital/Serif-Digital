@@ -18,6 +18,11 @@ body {
 	font-weight: 600;
 	line-height: 118%; /* 75.52px */
 	letter-spacing: -3.2px;
+
+	@include breakpoint-mobile {
+		text-align: center;
+		font-size: 64px;
+	}
 }
 
 //Hero UNDERLINE
@@ -27,6 +32,11 @@ body {
 	height: 17px;
 	margin-top: 25px;
 	background-color: $yellow;
+
+	@include breakpoint-mobile {
+		width: 100%;
+		align-self: center;
+	}
 }
 
 // intro text

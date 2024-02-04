@@ -6,16 +6,31 @@
 	grid-template-columns: repeat(4, 1fr);
 	grid-auto-rows: minmax(200px, auto);
 	text-align: center;
+
+	@include breakpoint-mobile {
+		width: 80%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-self: center;
+	}
 }
 
 .grid {
 	border: 2px solid black;
-	// box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 	transition: 0.3s ease-in-out;
 	border-radius: 3px;
 
 	&:hover {
 		border: 5px $off-black solid;
+	}
+
+	@include breakpoint-mobile {
+		height: 200px;
+		width: 100%;
+
+		align-self: center;
 	}
 }
 
@@ -27,6 +42,11 @@
 
 	&:hover {
 		box-shadow: #64904d 0px 30px 90px;
+
+		// &::before {
+		// 	content: "Unity Support";
+
+		// }
 	}
 }
 .grid-tm {
@@ -37,6 +57,10 @@
 
 	&:hover {
 		box-shadow: $yellow 0px 30px 90px;
+	}
+
+	@include breakpoint-mobile {
+		background-size: contain;
 	}
 }
 .grid-as {
