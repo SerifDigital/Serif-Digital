@@ -8,6 +8,10 @@ body {
 
 .hero {
 	margin: $margin-hero;
+	@include breakpoint-mobile {
+		margin-top: 4rem;
+		margin-bottom: 3rem;
+	}
 }
 
 .hero__h1 {
@@ -44,6 +48,11 @@ body {
 .intro-text {
 	margin: $margin-intro-text;
 
+	@include breakpoint-mobile {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
 	p {
 		color: $off-black-grey-p;
 		font-family: $ff-p;
@@ -64,11 +73,18 @@ body {
 	font-weight: $fw-normal;
 }
 
+// FEATURED WORK & CLIENTS HEADING
+
 .featured-heading {
 	font-family: $ff-h1;
 	font-size: 20px;
 	margin: $margin-featured-work-heading;
 	border-bottom: 4px solid black;
+
+	@include breakpoint-mobile {
+		margin-top: 4rem;
+		margin-bottom: 3rem;
+	}
 
 	.span-space {
 		padding: 20px;
@@ -86,4 +102,20 @@ body {
 .fas {
 	font-weight: 600;
 	padding-left: 10px;
+}
+
+.mobile-only-button {
+	text-align: center;
+	display: none;
+
+	@include breakpoint-mobile {
+		display: block;
+	}
+
+	button {
+		border: solid 2px $off-black-grey-p;
+		background-color: $yellow;
+		font-family: $ff-nav;
+		font-size: 16px;
+	}
 }

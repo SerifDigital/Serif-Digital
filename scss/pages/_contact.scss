@@ -16,16 +16,29 @@
 	width: 100%;
 	text-align: center;
 
+	@include breakpoint-mobile {
+		width: 80%;
+		margin: 0 auto;
+	}
+
 	h1 {
 		font-family: $ff-h1;
 		font-size: 128px;
 		margin-bottom: 30px;
+
+		@include breakpoint-mobile {
+			font-size: 94px;
+			text-align: center;
+			line-height: 0.8;
+			margin-bottom: 50px;
+		}
 	}
 
 	p {
 		font-family: $ff-p;
 		color: $off-black-grey-p;
 		margin-bottom: 70px;
+		font-size: 18px;
 	}
 }
 
@@ -38,6 +51,10 @@
 	margin-top: 100px;
 	margin-bottom: 100px;
 	border-radius: 3px;
+
+	@include breakpoint-mobile {
+		width: 90%;
+	}
 }
 
 .contact-form {
@@ -46,6 +63,11 @@
 	justify-content: center;
 	gap: 25px;
 	padding: 60px 0;
+
+	@include breakpoint-mobile {
+		flex-direction: column;
+		padding: 20px;
+	}
 }
 
 .form-left {
@@ -118,13 +140,20 @@ label {
 	&:focus {
 		outline: 2px $red-arterial-blood solid;
 	}
+
+	@include breakpoint-mobile {
+		margin-bottom: 30px;
+	}
 }
 
 .contact-button input {
-	width: 300px;
-	background-color: $y-tint-100;
+	min-width: 300px;
 	border: $off-black 2px solid;
 	border-radius: 8px;
+
+	@include breakpoint-mobile {
+		width: 100%;
+	}
 
 	&:hover {
 		background-color: $blue-secondary;

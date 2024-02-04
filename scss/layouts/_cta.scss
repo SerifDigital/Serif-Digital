@@ -1,5 +1,4 @@
 .cta-container {
-	margin-top: 50px;
 	background-color: $blue-secondary;
 	color: $off-white;
 
@@ -8,12 +7,22 @@
 		justify-content: center;
 		margin: $margin-cta-section;
 
+		@include breakpoint-mobile {
+			flex-direction: column-reverse;
+		}
+
 		&__left {
 			display: grid;
 			gap: 50px;
-
 			padding: 70px;
 			width: 50%;
+
+			@include breakpoint-mobile {
+				margin-top: 30px;
+				margin-bottom: 30px;
+				padding: 20px;
+				width: auto;
+			}
 
 			h3 {
 				color: $off-white;
@@ -37,6 +46,11 @@
 			gap: 15px;
 			width: 50%;
 
+			@include breakpoint-mobile {
+				padding-top: 50px;
+				width: auto;
+			}
+
 			p {
 				width: 80%;
 				font-size: 16px;
@@ -50,6 +64,7 @@
 			a {
 				color: $yellow;
 				transition: 0.3s ease;
+				width: 100%;
 
 				&:hover {
 					color: $darker-grey;
@@ -67,6 +82,14 @@
 				color: $darker-grey;
 			}
 		}
+	}
+}
+
+.cta-button {
+	width: 100%;
+
+	button {
+		width: 100%;
 	}
 }
 

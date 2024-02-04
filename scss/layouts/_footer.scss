@@ -11,6 +11,9 @@
 		justify-content: center;
 		gap: 50px;
 		align-items: center;
+		@include breakpoint-mobile {
+			flex-direction: column;
+		}
 	}
 
 	img {
