@@ -19,12 +19,14 @@
 				color: $off-white;
 				font-size: 32px;
 				font-style: normal;
-				font-weight: $fw-normal;
+				font-weight: $fw-semibold;
 				padding-right: 50px;
+				font-family: $ff-h1;
 			}
 
 			p {
 				font-size: 20px;
+				font-family: $ff-p;
 			}
 		}
 
@@ -38,12 +40,10 @@
 			p {
 				width: 80%;
 				font-size: 16px;
-
-				font-style: normal;
+				font-family: $ff-p;
 				font-weight: $fw-normal;
 				line-height: 22.4px;
 				letter-spacing: 1.08px;
-
 				align-self: center;
 			}
 
@@ -74,4 +74,5 @@
 .material-symbols-outlined {
 	font-size: 55px;
 	text-align: center;
+	align-self: center;
 }
