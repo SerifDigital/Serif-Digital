@@ -110,6 +110,7 @@ body {
 
 	@include breakpoint-mobile {
 		display: block;
+		color: $off-black;
 	}
 
 	button {
