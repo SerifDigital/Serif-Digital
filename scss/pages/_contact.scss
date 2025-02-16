@@ -13,6 +13,10 @@
 	padding-bottom: 16px;
 	border-bottom: $White_text solid 8px;
 
+	@include breakpoint-mobile {
+		margin: $margin-header-mobile;
+	}
+
 	img {
 		width: 191px;
 		// height: 60px;
@@ -20,12 +24,11 @@
 }
 
 .contact-hero {
-	width: 100%;
+	
 	text-align: center;
 
 	@include breakpoint-mobile {
-		width: 80%;
-		margin: 0 auto;
+		padding:8px;
 	}
 
 	h1 {
@@ -34,7 +37,7 @@
 	
 
 		@include breakpoint-mobile {
-			font-size: 94px;
+			font-size: 64px;
 			text-align: center;
 			line-height: 0.8;
 			margin-bottom: 50px;
@@ -53,14 +56,12 @@
 
 .form-container {
 	max-width: 700px;
-	margin: auto;
 	border: $Grey-300 solid 6px;
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin: 100px auto;
 	border-radius: 3px;
 
 	@include breakpoint-mobile {
-		width: 90%;
+		margin-top: 10px;
 	}
 }
 
@@ -71,6 +72,7 @@
 	gap: 25px;
 	padding: 60px 0;
 	background-color: $Grey-500;
+	
 
 	@include breakpoint-mobile {
 		flex-direction: column;
@@ -159,6 +161,7 @@ label {
 	border: $off-black 2px solid;
 	border-radius: 8px;
 	padding: 8px;
+	background-color: $Grey-400;
 	
 	@include breakpoint-mobile {
 		width: 100%;
