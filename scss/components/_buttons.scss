@@ -26,6 +26,7 @@ button {
 	transition: 0.3s ease;
 	font-family: $ff-p;
 	font-size: 18px;
+	color: black;
 
 	@include breakpoint-mobile {
 		padding: 14px 50px;
