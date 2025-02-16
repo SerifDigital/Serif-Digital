@@ -1,41 +1,55 @@
 .cta-container {
-	background-color: $blue-secondary;
-	color: $off-white;
+	background-color: $Black-500_BG;
+	color: $White_text;
 
 	.cta-wrapper {
 		display: flex;
 		justify-content: center;
 		margin: $margin-cta-section;
+		background-color: $Grey-500;
+		margin-bottom: 64px;
+		border-radius: 10px;
 
 		@include breakpoint-mobile {
+			margin: $margin-cta-section-mobile;
 			flex-direction: column-reverse;
 		}
 
 		&__left {
 			display: grid;
-			gap: 50px;
+			gap: 36px;
 			padding: 70px;
 			width: 50%;
 
 			@include breakpoint-mobile {
-				margin-top: 30px;
+				margin-top: 10px;
 				margin-bottom: 30px;
 				padding: 20px;
 				width: auto;
 			}
 
 			h3 {
-				color: $off-white;
-				font-size: 32px;
+				font-family: Inter;
+				font-size: 92px;
 				font-style: normal;
-				font-weight: $fw-semibold;
-				padding-right: 50px;
-				font-family: $ff-h1;
+				font-weight: 800;
+				line-height: 84%; /* 77.28px */
+				letter-spacing: -3.68px;
+				text-transform: uppercase;
+
+				@include breakpoint-mobile {
+					font-size: 64px;
+				}
 			}
 
 			p {
 				font-size: 20px;
 				font-family: $ff-p;
+				color: $Yellow-500;
+
+				@include breakpoint-mobile {
+					font-size: 14px;
+				}
 			}
 		}
 
@@ -47,7 +61,7 @@
 			width: 50%;
 
 			@include breakpoint-mobile {
-				padding-top: 50px;
+				padding: 16px;
 				width: auto;
 			}
 
@@ -59,6 +73,10 @@
 				line-height: 22.4px;
 				letter-spacing: 1.08px;
 				align-self: center;
+
+				@include breakpoint-mobile {
+					font-size: 14px;
+				}
 			}
 
 			a {
@@ -80,19 +98,15 @@
 				width: 75%;
 				align-self: center;
 				color: $darker-grey;
+
+				@include breakpoint-mobile {
+					width: 95%
+				}
 			}
 		}
 	}
 }
 
-.cta-button {
-	width: 100%;
-
-	button {
-		width: 100%;
-		font-size: 16px;
-	}
-}
 
 //Icon
 .material-symbols-outlined {

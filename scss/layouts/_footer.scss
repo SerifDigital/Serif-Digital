@@ -21,11 +21,16 @@
 	}
 
 	a {
-		color: $blue-secondary;
-		transition: 0.3s ease;
+		color: $Black-950;
+		transition: 0.2s ease;
 
 		&:hover {
 			color: $red-arterial-blood;
 		}
 	}
+}
+
+
+.footer-date {
+	color: $Black-950;
 }

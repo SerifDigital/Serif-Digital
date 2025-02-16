@@ -3,12 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;500;600;700;900&display=swap" rel="stylesheet" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
 		<script src="https://kit.fontawesome.com/23f682af51.js" crossorigin="anonymous"></script>
 		<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/serif-favicon.png" />
@@ -16,10 +14,10 @@
 		<title>Serif | Digital</title>
 	</head>
 	<body>
-		<header class="header">
-			<a href="index.html" class="main-logo-link"><img src="assets/logo/SVG/logo-main.svg" alt="Serif Digital Logo" /></a>
+		<header class="header" id="nav">
+			<a href="index.html" class="main-logo-link"><img src="assets/logo/SVG/logo-main-white.svg" alt="Serif Digital Logo" /></a>
 
-			<nav class="stroke" id="mobile-hide">
+			<nav class="stroke" >
 				<ul>
 					<li id="mobile-hide"><a href="index.html">Home</a></li>
 
@@ -28,25 +26,33 @@
 			</nav>
 		</header>
 
-		<div class="mobile-only-button">
-			<a href="contact.html"><button>Say hello.</button></a>
-		</div>
+		
 		<main>
-			<section class="hero">
-				<h1 class="hero__h1">Web Development <br />and UI design.</h1>
+			<section class="hero" id="hero">
+				<h1 class="hero__h1">Web <br />design & <br />UI design<span class="hero-fullstop">.</span></h1>
 				<div class="hero-underline"></div>
 			</section>
 			<section class="intro-text">
 				<p class="intro-text__style">
-					<span class="span-space"></span>
-					<span>Perth, WA</span> based, front end development. <span>We make websites</span>. We create engaging web experiences for <span>local businesses</span>. We can help elevate your current
-					brand. Specialising in <span>Web design, branding & style guides, HTML5, CSS, JavaScript, and SCSS/SASS</span>. With a passion for seamless, bespoke design and functionality, we bring your
-					online vision to life. Let's transform your digital presence into an impactful success story.
+					<span class="span-space">
+						
+						<span class="span-bold">Perth</span> based, Front end developer. 
+						<span class="span-bold">We make websites</span>. I create and elevate websites for <span class="span-bold"span>local businesses</span> and we look to craft engaging Web Experiences for Local Businesses. 
+						<span class="span-bold">Specialising</span> in CSS, HTML, JavaScript, and SCSS/SASS, With a passion for seamless design and functionality, 
+						I bring your online vision to life. 
+						Let's transform your digital presence into an impactful success story.
+					
+					</span>
+
+					
 				</p>
+				<div class="mobile-only-button">
+					<a href="contact.html"><button>Say hello.</button></a>
+				</div>
 			</section>
 
-			<h2 class="featured-heading">
-				featured work & clients<span><i class="fa-solid fa-fire"></i></span>
+			<h2 class="featured-heading" id="featured">
+				Featured work & clients<span><i class="fa-solid fa-fire"></i></span>
 			</h2>
 
 			<section class="grid-showcase">
@@ -64,14 +70,14 @@
 				<a href="#" target="_blank" class="grid-bm grid"></a>
 			</section>
 
-			<section class="cta-container">
+			<section class="cta-container" id="cta">
 				<div class="cta-wrapper">
 					<div class="cta-wrapper__left">
-						<h3>Serif Digital: Empowering Small Businesses.</h3>
+						<h3>Serif<br>Digital</h3>
 						<p>Hand crafted web designs for your target clients.</p>
-						<div class="cta-button">
-							<a href="contact.html"><button>Ready to get started?</button></a>
-						</div>
+						
+							<a href="contact.html"><button class="cta-button">Ready to get started?</button></a>
+						
 					</div>
 					<div class="cta-wrapper__right">
 						<div>
@@ -102,12 +108,13 @@
 			</section>
 		</main>
 
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="footer__wrapper">
 				<a href="mailto:ben@serifdigital.com.au" class="footer-email"><i class="fa-regular fa-envelope"></i> ben@serifdigital.com.au</a>
 				<a href="index.html"><img src="assets/logo/SVG/logo-main.svg" alt="Serif Digital Logo" /></a>
-				<p><i class="fa-solid fa-laptop-code"></i> 2024 <i class="fa-regular fa-copyright"></i></p>
+				<p class="footer-date"><i class="fa-solid fa-laptop-code"></i> 2025 <i class="fa-regular fa-copyright"></i></p>
 			</div>
 		</footer>
+		<script src="./js/script.js"></script>
 	</body>
 </html>

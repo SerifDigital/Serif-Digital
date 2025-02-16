@@ -1,30 +1,36 @@
+html {
+	scroll-snap-type: y mandatory;
+}
+
 body {
-	color: $off-black-grey-p; //color variable set elsewhere
-	background: $grey-bg;
+	color: $White_text; //color variable set elsewhere
+	background: $Black-500_BG;
 	-webkit-text-size-adjust: 100%; //fix for iOS
 }
 
-//HERO
+//HERO SECTION
 
 .hero {
 	margin: $margin-hero;
+	
 	@include breakpoint-mobile {
-		margin-top: 4rem;
-		margin-bottom: 3rem;
+		margin: $margin-hero-mobile;
 	}
 }
 
 .hero__h1 {
 	font-family: $ff-h1;
-	color: $off-black-grey-p;
-	font-size: 4rem;
+	color: $White_text;
+	font-size: 5.75rem;
 	font-style: normal;
-	font-weight: 600;
-	line-height: 118%; /* 75.52px */
-	letter-spacing: -3.2px;
+	font-weight: 800;
+	line-height: 84%; /* 75.52px */
+	text-transform: uppercase;
+	letter-spacing: .0625rem;
+	
 
 	@include breakpoint-mobile {
-		text-align: center;
+		
 		font-size: 42px;
 	}
 }
@@ -33,13 +39,14 @@ body {
 
 .hero-underline {
 	width: 400px;
-	height: 17px;
-	margin-top: 25px;
+	height: 16px;
+	margin-top: 24px;
 	background-color: $yellow;
 
 	@include breakpoint-mobile {
 		width: 100%;
 		align-self: center;
+		height: 8px;
 	}
 }
 
@@ -49,19 +56,31 @@ body {
 	margin: $margin-intro-text;
 
 	@include breakpoint-mobile {
+		margin: $margin-intro-text-mobile;
 		margin-top: 2rem;
 		margin-bottom: 2rem;
 	}
 
 	p {
-		color: $off-black-grey-p;
+		color: $White_text;
 		font-family: $ff-p;
 		font-size: 18px;
 
 		font-weight: $fw-light;
 		line-height: 151%; /* 27.18px */
 		letter-spacing: 0.54px;
+
+		
+	@include breakpoint-mobile {
+		
+		font-size: 14px;
 	}
+	}
+}
+
+.hero-fullstop {
+	color: $yellow;
+	margin-left: 8px;
 }
 
 //intro text formatting
@@ -69,17 +88,24 @@ body {
 	margin-left: 40%;
 }
 
-.intro-text span {
+.intro-text  {
 	font-weight: $fw-normal;
+
+
+}
+
+.span-bold {
+	font-weight: 700;
 }
 
 // FEATURED WORK & CLIENTS HEADING
 
 .featured-heading {
 	font-family: $ff-h1;
+	font-weight: 500;
 	font-size: 20px;
 	margin: $margin-featured-work-heading;
-	border-bottom: 4px solid black;
+	border-bottom: 4px solid $White_text;
 
 	@include breakpoint-mobile {
 		margin-top: 4rem;
@@ -105,10 +131,12 @@ body {
 }
 
 .mobile-only-button {
-	text-align: center;
+	
 	display: none;
 
 	@include breakpoint-mobile {
+		text-align: center;
+		margin: $mobile-only-button;
 		display: block;
 		color: $off-black;
 	}
