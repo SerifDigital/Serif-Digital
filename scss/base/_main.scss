@@ -131,20 +131,36 @@ body {
 }
 
 .mobile-only-button {
-	
-	display: none;
+    display: none;
 
-	@include breakpoint-mobile {
-		text-align: center;
-		margin: $mobile-only-button;
-		display: block;
-		color: $off-black;
-	}
+    @include breakpoint-mobile {
+        text-align: center;
+        margin: $mobile-only-button;
+        display: block;
+        color: $off-black;
+    }
 
-	button {
-		border: solid 2px $off-black-grey-p;
-		background-color: $yellow;
-		font-family: $ff-nav;
-		font-size: 16px;
-	}
+    #sayHelloButton {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: $yellow;
+        color: black; /* Adjust for readability */
+        text-decoration: none;
+        font-family: $ff-nav;
+        font-size: 16px;
+        border: solid 2px $off-black-grey-p;
+        border-radius: 8px;
+        text-align: center;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    #sayHelloButton:hover {
+        background-color: darken($yellow, 10%); /* Darker shade on hover */
+        transform: scale(1.05);
+    }
+
+    #sayHelloButton:active {
+        transform: scale(0.95);
+    }
 }
+

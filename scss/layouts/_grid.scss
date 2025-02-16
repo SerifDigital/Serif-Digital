@@ -41,6 +41,7 @@
 
 	&:hover {
 		box-shadow: #64904d 0px 30px 90px;
+		transform: scale(1.05);
 
 		// &::before {
 		// 	content: "Unity Support";
@@ -71,6 +72,7 @@
 
 	&:hover {
 		box-shadow: $Green-300 0px 30px 90px;
+		transform: scale(1.05);
 	}
 }
 .grid-ml {
@@ -92,6 +94,7 @@
 
 	&:hover {
 		box-shadow: $White_text 0px 30px 90px;
+		transform: scale(1.05);
 	}
 }
 .grid-bm {
