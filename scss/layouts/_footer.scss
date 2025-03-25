@@ -5,8 +5,8 @@
 	align-items: center;
 	justify-content: center;
 	font-family: $ff-a;
-	width: 100vw; // ensures full viewport width
-	margin: 0; // remove any default margin
+	width: 100vw;
+	margin: 0;
 	padding: 0;
 
 	&__wrapper {

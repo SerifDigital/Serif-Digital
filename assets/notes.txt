@@ -6,7 +6,7 @@ For Netifly form, paste following into form parent element below --- method="POS
 
 
 
-2024 Feb 3rd update with new colour scheme and style guide.
+
 
 Primary COLORS SCSS VARIABLES
 $arterial-blood-red: #771717;
@@ -270,6 +270,6 @@ Layout
 Pages
 Themes
 
-USE THESE BELOW BEN
+
 
 @import "./utils/variables";
