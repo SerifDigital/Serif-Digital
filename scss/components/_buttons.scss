@@ -5,21 +5,18 @@
 // 		text-decoration: none;
 // 		color: $White_text;
 // 		font-family: $ff-a;
-		
 
 // 		@include breakpoint-mobile {
 // 			text-align: center;
 // 			width: 95%
 // 		}
 
-		
-		
 // 	}
 // }
 
 button {
 	width: auto;
-	padding: 16px 80px;
+	padding: 16px 32px;
 	background-color: $yellow;
 	border-radius: 8px;
 	border: none;
@@ -31,7 +28,6 @@ button {
 	@include breakpoint-mobile {
 		padding: 14px 50px;
 	}
-
 
 	&:hover {
 		background-color: $darker-grey;

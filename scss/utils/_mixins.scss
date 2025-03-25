@@ -1,5 +1,10 @@
 @mixin breakpoint-mobile {
-	@media only screen and (max-width: 475px) {
+	@media only screen and (max-width: 480px) {
+		@content;
+	}
+}
+@mixin breakpoint-tablet {
+	@media only screen and (max-width: 768px) {
 		@content;
 	}
 }

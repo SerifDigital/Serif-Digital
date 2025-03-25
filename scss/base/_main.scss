@@ -12,7 +12,7 @@ body {
 
 .hero {
 	margin: $margin-hero;
-	
+
 	@include breakpoint-mobile {
 		margin: $margin-hero-mobile;
 	}
@@ -26,11 +26,9 @@ body {
 	font-weight: 800;
 	line-height: 84%; /* 75.52px */
 	text-transform: uppercase;
-	letter-spacing: .0625rem;
-	
+	letter-spacing: 0.0625rem;
 
 	@include breakpoint-mobile {
-		
 		font-size: 42px;
 	}
 }
@@ -70,11 +68,9 @@ body {
 		line-height: 151%; /* 27.18px */
 		letter-spacing: 0.54px;
 
-		
-	@include breakpoint-mobile {
-		
-		font-size: 14px;
-	}
+		@include breakpoint-mobile {
+			font-size: 14px;
+		}
 	}
 }
 
@@ -88,10 +84,8 @@ body {
 	margin-left: 40%;
 }
 
-.intro-text  {
+.intro-text {
 	font-weight: $fw-normal;
-
-
 }
 
 .span-bold {
@@ -131,36 +125,35 @@ body {
 }
 
 .mobile-only-button {
-    display: none;
+	display: none;
 
-    @include breakpoint-mobile {
-        text-align: center;
-        margin: $mobile-only-button;
-        display: block;
-        color: $off-black;
-    }
+	@include breakpoint-mobile {
+		text-align: center;
+		margin: $mobile-only-button;
+		display: block;
+		color: $off-black;
+	}
 
-    #sayHelloButton {
-        display: inline-block;
-        padding: 12px 74px;
-        background-color: $yellow;
-        color: black; /* Adjust for readability */
-        text-decoration: none;
-        font-family: $ff-nav;
-        font-size: 16px;
-        border: solid 2px $off-black-grey-p;
-        border-radius: 8px;
-        text-align: center;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-    }
+	#sayHelloButton {
+		display: inline-block;
+		padding: 12px 74px;
+		background-color: $yellow;
+		color: black; /* Adjust for readability */
+		text-decoration: none;
+		font-family: $ff-nav;
+		font-size: 16px;
+		border: solid 2px $off-black-grey-p;
+		border-radius: 8px;
+		text-align: center;
+		transition: background-color 0.3s ease, transform 0.2s ease;
+	}
 
-    #sayHelloButton:hover {
-        background-color: darken($yellow, 10%); /* Darker shade on hover */
-        transform: scale(1.05);
-    }
+	#sayHelloButton:hover {
+		background-color: darken($yellow, 10%); /* Darker shade on hover */
+		transform: scale(1.05);
+	}
 
-    #sayHelloButton:active {
-        transform: scale(0.95);
-    }
+	#sayHelloButton:active {
+		transform: scale(0.95);
+	}
 }
-
