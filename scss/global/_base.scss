@@ -1,0 +1,21 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  background: $Black-500_BG;
+  -webkit-text-size-adjust: 100%; //fix for iOS
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
