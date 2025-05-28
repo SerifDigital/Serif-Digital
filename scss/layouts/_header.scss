@@ -1,0 +1,23 @@
+.header {
+	margin: $margin-header;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 16px;
+
+	border-bottom: $White_text solid 8px;
+
+	@include breakpoint-mobile {
+		margin: $margin-header-mobile;
+	}
+
+	img {
+		width: 191px;
+	}
+}
+
+.main-logo-link {
+	&:hover {
+		cursor: pointer;
+	}
+}

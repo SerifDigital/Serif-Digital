@@ -1,0 +1,22 @@
+Background white #F1F0EF
+Black #000000
+Darker Grey #949392
+Darkest grey #6B7280
+
+grey neutral #BAB9B8
+Lightest blue #F7F9FC
+Off White #F9F5EF
+grey very light #E8E4E4
+Yellow CTA #FAC734
+Golden yellow #FFDF00
+
+
+
+
+
+grey-bg-0 #E8E4E4
+darker grey #949392
+Dark-Blue-Secondary #2F4858
+Yellow CTA #FAC734
+Brown #AF734A
+Off black #141414

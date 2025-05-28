@@ -1,0 +1,32 @@
+// @import "./utils/functions";
+@import "./utils/mixins";
+// @import "./utils/extensions";
+@import "./utils/variables";
+
+@import "./base/main";
+@import "./base/reset";
+@import "./base/typography";
+@import "./components/buttons";
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/grid";
+@import "./layouts/cta";
+@import "./layouts/footer";
+// @import "./layouts/container";
+// @import "./layouts/form";
+
+// @import "./pages/about.scss";
+@import "./pages/contact";
+
+// SCSS Folder architecture layout
+// Utils:
+// Variables
+// Functions
+// Mixins
+// Placeholders
+// Vendor sheets (if you have them)
+// Base
+// Components
+// Layout
+// Pages
+// Themes

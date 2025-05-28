@@ -1,0 +1,151 @@
+/*======================================
+*            COLORS                    *
+======================================*/
+
+// 2025
+
+$Black-950: #050505;
+$Black-900: #080808;
+$Black-800: #0f0f0f;
+$Black-700: #171717;
+$Black-600: #1f1f1f;
+$Black-500_BG: #272727;
+$Black-400: #525252;
+$Black-300: #7d7d7d;
+$Black-200: #a8a8a8;
+$Black-100: #d4d4d4;
+$Black-50: #ebebeb;
+
+$Grey-950: #080808;
+$Grey-900: #0f0f0f;
+$Grey-800: #1f1f1f;
+$Grey-700: #2e2e2e;
+$Grey-600: #3d3d3d;
+$Grey-500: #4e4e4e;
+$Grey-400: #707070;
+$Grey-300: #949494;
+$Grey-200: #b8b8b8;
+$Grey-100: #dbdbdb;
+$Grey-50: #ededed;
+
+$Green-950: #111900;
+$Green-900: #233300;
+$Green-800: #446300;
+$Green-700: #699900;
+$Green-600: #8bcc00;
+$Green-500: #b0ff01;
+$Green-400: #beff33;
+$Green-300: #cfff66;
+$Green-200: #dfff99;
+$Green-100: #efffcc;
+$Green-50: #f7ffe5;
+
+$Yellow-950: #1e1701;
+$Yellow-900: #3c2d01;
+$Yellow-800: #775a03;
+$Yellow-700: #b38704;
+$Yellow-600: #eab106;
+$Yellow-500: #fac734;
+$Yellow-400: #fbd35b;
+$Yellow-300: #fcdf88;
+$Yellow-200: #fdeaaf;
+$Yellow-100: #fef4d7;
+$Yellow-50: #fffaeb;
+
+$White_text: #ffffff;
+
+// Primary - Main
+$grey-bg: #272727;
+$darker-grey: #969292;
+$cta-bg: #4e4e4e;
+$yellow: #fac734;
+$red-arterial-blood: #771717;
+
+// Shade - Primary
+$off-black: #141414;
+$off-black-grey-p: #242424;
+$off-white: #fffff2;
+
+// PRIMARY TINTS
+
+// Tints of Main Background Color
+$bg-tint-100: rgba(217, 217, 217, 1);
+$bg-tint-200: rgba(195, 195, 195, 1);
+$bg-tint-300: rgba(173, 173, 173, 1);
+$bg-tint-400: rgba(151, 151, 151, 1);
+$bg-tint-500: rgba(130, 130, 130, 1);
+$bg-tint-600: rgba(108, 108, 108, 1);
+
+// Tints of Off-black
+$ob-tint-100: rgba(20, 20, 20, 1);
+$ob-tint-200: rgba(43, 43, 43, 1);
+$ob-tint-300: rgba(66, 66, 66, 1);
+$ob-tint-400: rgba(90, 90, 90, 1);
+$ob-tint-500: rgba(114, 114, 114, 1);
+$ob-tint-600: rgba(137, 137, 137, 1);
+
+// Tints of Yellow
+$y-tint-100: rgba(250, 199, 52, 1);
+$y-tint-200: rgba(250, 204, 72, 1);
+$y-tint-300: rgba(251, 210, 92, 1);
+$y-tint-400: rgba(251, 215, 112, 1);
+$y-tint-500: rgba(252, 221, 133, 1);
+$y-tint-600: rgba(252, 227, 153, 1);
+
+// Tints of Arterial Red
+$ar-tint-100: rgba(119, 23, 23, 1);
+$ar-tint-200: rgba(132, 46, 46, 1);
+$ar-tint-300: rgba(146, 69, 69, 1);
+$ar-tint-400: rgba(159, 92, 92, 1);
+$ar-tint-500: rgba(173, 115, 115, 1);
+$ar-tint-600: rgba(187, 139, 139, 1);
+
+// Tints of Secondary Blue
+$sb-tint-100: rgba(47, 72, 88, 1);
+$sb-tint-200: rgba(67, 90, 104, 1);
+$sb-tint-300: rgba(88, 108, 121, 1);
+$sb-tint-400: rgba(109, 126, 138, 1);
+$sb-tint-500: rgba(130, 145, 154, 1);
+$sb-tint-600: rgba(151, 163, 171, 1);
+
+/*======================================
+*            FONTS           *
+======================================*/
+
+// Font Families
+// $ff-h1: "Playfair Display", serif;
+$ff-h1: "Inter", serif;
+// $ff-p: "League Spartan", sans-serif;
+$ff-p: "Open Sans", serif;
+$ff-nav: "Inter", serif;
+$ff-a: "Open Sans", serif;
+
+// Font weight
+$fw-hairline: 100;
+$fw-light: 300;
+$fw-normal: 400;
+$fw-semibold: 500;
+$fw-bold: 700;
+$fw-xbold: 900;
+
+/*======================================
+*            SECTION WIDTHS            *
+======================================*/
+
+// Desktop
+$margin-header: 48px 15% 7.81rem 15%;
+$margin-hero: 7.81rem 15% 7.81rem 15%;
+$margin-cta-section: 7.81rem 10% 4rem 10%;
+$margin-intro-text: 7.81rem 15% 7.81rem 15%;
+$margin-featured-work-heading: 7.81rem 15% 3rem 15%;
+
+// Mobile
+$margin-header-mobile: 50px 5% 4rem 5%;
+$margin-hero-mobile: 15px 5% 5px 5%;
+$mobile-only-button: 32px auto;
+$margin-intro-text-mobile: 7.81rem 5% 7.81rem 5%;
+$margin-featured-work-heading-mobile: 7.81rem 15% 3rem 15%;
+$margin-cta-section-mobile: 50px 5% 50px 5%;
+
+// Contact us
+$contact-margin-header: 1.25rem 15% 3rem 15%;

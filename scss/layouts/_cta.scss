@@ -1,0 +1,136 @@
+.cta-container {
+	background-color: $Black-500_BG;
+	color: $White_text;
+
+	.cta-wrapper {
+		display: flex;
+		justify-content: center;
+		margin: $margin-cta-section;
+		background-color: $Grey-500;
+		border-radius: 10px;
+
+		@include breakpoint-tablet {
+			flex-direction: column;
+			text-align: center;
+			align-items: center;
+		}
+
+		@include breakpoint-mobile {
+			margin: $margin-cta-section-mobile;
+			flex-direction: column-reverse;
+		}
+
+		&__left {
+			display: grid;
+			gap: 36px;
+			padding: 70px;
+			width: 50%;
+
+			@include breakpoint-tablet {
+				width: auto;
+			}
+			@include breakpoint-mobile {
+				margin-top: 10px;
+				margin-bottom: 30px;
+				padding: 20px;
+				width: auto;
+			}
+
+			h3 {
+				font-family: Inter;
+				font-size: 92px;
+				font-style: normal;
+				font-weight: 800;
+				line-height: 84%; /* 77.28px */
+				letter-spacing: -3.68px;
+				text-transform: uppercase;
+
+				@include breakpoint-mobile {
+					font-size: 64px;
+				}
+			}
+
+			p {
+				font-size: 20px;
+				font-family: $ff-p;
+				color: $Yellow-500;
+
+				@include breakpoint-mobile {
+					font-size: 14px;
+				}
+			}
+		}
+
+		&__right {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 15px;
+			width: 50%;
+
+			@include breakpoint-tablet {
+				width: 80%;
+				margin-bottom: 70px;
+			}
+
+			@include breakpoint-mobile {
+				padding: 16px;
+				width: auto;
+				margin-bottom: 0;
+			}
+
+			p {
+				width: 80%;
+				font-size: 16px;
+				font-family: $ff-p;
+				font-weight: $fw-normal;
+				line-height: 22.4px;
+				letter-spacing: 1.08px;
+				align-self: center;
+
+				@include breakpoint-mobile {
+					font-size: 14px;
+				}
+			}
+
+			a {
+				color: $yellow;
+				transition: 0.3s ease;
+				width: 100%;
+				color: black;
+
+				&:hover {
+					color: $darker-grey;
+				}
+			}
+
+			> div {
+				display: flex;
+				gap: 16px;
+			}
+
+			hr {
+				width: 75%;
+				align-self: center;
+				color: $darker-grey;
+
+				@include breakpoint-mobile {
+					width: 95%;
+				}
+			}
+		}
+	}
+}
+
+//Icon
+.material-symbols-outlined {
+	font-size: 55px;
+	text-align: center;
+	align-self: center;
+}
+
+#cta-link {
+	color: $y-tint-500;
+	text-decoration: underline;
+	cursor: pointer;
+}

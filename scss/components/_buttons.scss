@@ -1,0 +1,21 @@
+button {
+	width: auto;
+	padding: 16px 32px;
+	background-color: $yellow;
+	border-radius: 8px;
+	border: none;
+	transition: 0.3s ease;
+	font-family: $ff-p;
+	font-size: 18px;
+	color: black;
+
+	@include breakpoint-mobile {
+		padding: 14px 50px;
+	}
+
+	&:hover {
+		background-color: $darker-grey;
+		cursor: pointer;
+		transform: scale(1.05);
+	}
+}
