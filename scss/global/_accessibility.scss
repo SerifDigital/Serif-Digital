@@ -1,0 +1,71 @@
+// Visually hidden (screen-reader only) text
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+// Focus styles for keyboard users
+input:focus,
+textarea:focus,
+button:focus,
+a:focus {
+	outline: 2px solid #00bfff; // Customize to match your brand
+	outline-offset: 3px;
+	background-color: #fff; // Optional: contrast enhancement
+}
+
+// Hint text for form fields (aria-describedby target)
+.contact__hint {
+	font-size: 0.85rem;
+	color: #888;
+	margin-top: 0.25rem;
+}
+
+// High-contrast text utility (if needed later)
+.text-contrast {
+	color: #000;
+	background-color: #fff;
+}
+
+.skip-link {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	background-color: #000;
+	color: #fff;
+	padding: 0.75rem 1rem;
+	z-index: 1000;
+	transition: top 0.3s ease;
+	text-decoration: none;
+	font-weight: bold;
+
+	&:focus {
+		top: 0;
+	}
+}
+
+.back-to-top {
+	display: inline-block;
+	margin-top: 2rem;
+	font-size: 0.95rem;
+	color: #fff;
+	text-decoration: none;
+	background-color: #000;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+
+	&:hover,
+	&:focus {
+		background-color: #333;
+		outline: 2px solid #fff;
+		outline-offset: 2px;
+	}
+}

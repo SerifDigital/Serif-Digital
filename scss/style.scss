@@ -1,30 +1,32 @@
-// @import "./utils/functions";
-@import "./utils/mixins";
-// @import "./utils/extensions";
-@import "./utils/variables";
+// Utilities - global access
+@import "utilities/variables";
+@import "utilities/mixins";
 
-@import "./base/main";
-@import "./base/reset";
-@import "./base/typography";
-@import "./components/buttons";
-@import "./layouts/header";
-@import "./layouts/nav";
-@import "./layouts/grid";
-@import "./layouts/cta";
-@import "./layouts/footer";
-// @import "./layouts/container";
-// @import "./layouts/form";
+// Global resets and base typography
 
-// @import "./pages/about.scss";
-@import "./pages/contact";
+@import "global/reset";
+@import "global/accessibility";
+@import "global/base";
+@import "global/typography";
 
-// SCSS Folder architecture layout
+// Layout rules
+@import "layouts/global-layouts";
+
+// Sections
+
+@import "sections/header";
+@import "sections/hero";
+@import "sections/grid-showcase";
+@import "sections/cta";
+@import "sections/footer";
+
+// SCSS Folder architecture layout - Template
 // Utils:
 // Variables
 // Functions
 // Mixins
 // Placeholders
-// Vendor sheets (if you have them)
+// Vendor sheets
 // Base
 // Components
 // Layout
