@@ -1,4 +1,4 @@
-learnings and notable skills
+# Learnings and notables
 
 why scss?
 file architecture / scss
@@ -19,12 +19,12 @@ A custom-designed, accessibility-focused frontend website for Serif Digital — 
 
 ## ✨ Learnings & Notable Skills
 
--   Modular SCSS architecture for scalable styling
--   Refactoring into BEM (Block Element Modifier) class naming convention
--   Semantic HTML5 structure
--   Responsive layout techniques using Flexbox and media queries
--   Accessibility enhancements including ARIA roles and keyboard navigation
--   Node-based workflow automation (e.g., class extraction script)
+- Modular SCSS architecture for scalable styling
+- Refactoring into BEM (Block Element Modifier) class naming convention
+- Semantic HTML5 structure
+- Responsive layout techniques using Flexbox and media queries
+- Accessibility enhancements including ARIA roles and keyboard navigation
+- Node-based workflow automation (e.g., class extraction script)
 
 ---
 
@@ -32,10 +32,10 @@ A custom-designed, accessibility-focused frontend website for Serif Digital — 
 
 SCSS was chosen to:
 
--   Keep code DRY and modular using partials
--   Use variables and mixins for consistent styling
--   Support nesting that mirrors HTML structure
--   Easily manage a multi-section site
+- Keep code DRY and modular using partials
+- Use variables and mixins for consistent styling
+- Support nesting that mirrors HTML structure
+- Easily manage a multi-section site
 
 ---
 
@@ -63,16 +63,16 @@ employers.html           # Showcase/landing for employers
 
 The entire site was refactored using BEM for:
 
--   Clear, scalable class structure
--   Easier debugging and targeting in SCSS
--   Better maintainability and readability
+- Clear, scalable class structure
+- Easier debugging and targeting in SCSS
+- Better maintainability and readability
 
 Example:
 
 ```html
 <section class="hero">
-	<h1 class="hero__title">Welcome</h1>
-	<p class="hero__text">Clean code, clear results.</p>
+  <h1 class="hero__title">Welcome</h1>
+  <p class="hero__text">Clean code, clear results.</p>
 </section>
 ```
 
@@ -84,13 +84,13 @@ Using a `.container` wrapper within each section allows:
 
 ### ✅ Pros:
 
--   Consistent max-width alignment
--   Independent styling for sections
--   Modularity and reuse
+- Consistent max-width alignment
+- Independent styling for sections
+- Modularity and reuse
 
 ### ⚠️ Cons:
 
--   Slightly more verbose HTML
+- Slightly more verbose HTML
 
 Conclusion: This structure supports real-world, maintainable design patterns.
 
@@ -100,9 +100,9 @@ Conclusion: This structure supports real-world, maintainable design patterns.
 
 A custom `extract-classes.js` Node script helps:
 
--   Extract all class names from HTML
--   Deduplicate and sort them
--   Output to `class-names.txt` for styling or documentation
+- Extract all class names from HTML
+- Deduplicate and sort them
+- Output to `class-names.txt` for styling or documentation
 
 ---
 
@@ -110,33 +110,33 @@ A custom `extract-classes.js` Node script helps:
 
 Implemented:
 
--   [x] Semantic HTML structure (`<header>`, `<main>`, `<footer>`, `<section>`)
--   [x] Accessible form labels with `for`/`id` and `aria-required`
--   [x] `aria-describedby` for form hints and guidance
--   [x] `aria-labelledby` on form and footer sections for screen readers
--   [x] Keyboard navigable form with visible focus styling
--   [x] Decorative icons hidden from screen readers with `aria-hidden="true"`
--   [x] Footer declared with `role="contentinfo"` for landmark navigation
--   [x] Screen-reader-only text (`.sr-only`) used for descriptive labels
--   [x] Added `_accessibility.scss` containing:
-    -   `.sr-only` utility for hidden headings
-    -   Global focus outline styles
-    -   Form hint text styling
--   [x] "Skip to main content" link
-    -   Placed directly after `<body>` tag
-    -   Targets `<main id="main" role="main">`
-    -   Visually hidden unless focused via keyboard (`.skip-link`)
--   [x] "Back to top" link
-    -   Placed at the bottom of the `<footer>`
-    -   Uses the same `#main` target for consistency
-    -   Styled with `.back-to-top` class and keyboard-focus visibility
+- [x] Semantic HTML structure (`<header>`, `<main>`, `<footer>`, `<section>`)
+- [x] Accessible form labels with `for`/`id` and `aria-required`
+- [x] `aria-describedby` for form hints and guidance
+- [x] `aria-labelledby` on form and footer sections for screen readers
+- [x] Keyboard navigable form with visible focus styling
+- [x] Decorative icons hidden from screen readers with `aria-hidden="true"`
+- [x] Footer declared with `role="contentinfo"` for landmark navigation
+- [x] Screen-reader-only text (`.sr-only`) used for descriptive labels
+- [x] Added `_accessibility.scss` containing:
+  - `.sr-only` utility for hidden headings
+  - Global focus outline styles
+  - Form hint text styling
+- [x] "Skip to main content" link
+  - Placed directly after `<body>` tag
+  - Targets `<main id="main" role="main">`
+  - Visually hidden unless focused via keyboard (`.skip-link`)
+- [x] "Back to top" link
+  - Placed at the bottom of the `<footer>`
+  - Uses the same `#main` target for consistency
+  - Styled with `.back-to-top` class and keyboard-focus visibility
 
 Planned:
 
--   [ ] Live form validation feedback with `aria-live`
--   [ ] Screen reader announcements for success/error
--   [ ] Skip links to specific sections (e.g., contact, featured work)
--   [ ] Full accessibility audit on mobile devices and screen readers
+- [ ] Live form validation feedback with `aria-live`
+- [ ] Screen reader announcements for success/error
+- [ ] Skip links to specific sections (e.g., contact, featured work)
+- [ ] Full accessibility audit on mobile devices and screen readers
 
 ---
 
@@ -144,11 +144,11 @@ Planned:
 
 Intended for deployment via [Netlify](https://www.netlify.com/).
 
-Netlify setup:
+Netlify form setup:
 
--   Use `method="POST"` and `data-netlify="true"` on forms
--   Ensure all input `name` attributes are defined
--   Add a `name="contact-form"` and include hidden honeypot field if needed
+- Use `method="POST"` and `data-netlify="true"` on forms
+- Ensure all input `name` attributes are defined
+- Add a `name="contact-form"` and include hidden honeypot field if needed
 
 ---
 
@@ -190,12 +190,12 @@ A personal web design and UI development portfolio built with semantic HTML, SCS
 
 ## ✨ Learnings & Notable Skills
 
--   Modular SCSS architecture for scalable styling
--   BEM (Block Element Modifier) naming conventions
--   Semantic HTML5 structure and accessibility-first development
--   Clean two-column layouts using CSS Flexbox
--   Responsive design considerations from the ground up
--   Node.js scripting to automate repetitive tasks (e.g., class extraction)
+- Modular SCSS architecture for scalable styling
+- BEM (Block Element Modifier) naming conventions
+- Semantic HTML5 structure and accessibility-first development
+- Clean two-column layouts using CSS Flexbox
+- Responsive design considerations from the ground up
+- Node.js scripting to automate repetitive tasks (e.g., class extraction)
 
 ---
 
@@ -203,10 +203,10 @@ A personal web design and UI development portfolio built with semantic HTML, SCS
 
 SCSS was chosen for its:
 
--   Nested structure (reflects HTML hierarchy)
--   Variables and mixins for reusable design tokens
--   Easier file splitting for maintainable styles
--   Cleaner syntax compared to raw CSS
+- Nested structure (reflects HTML hierarchy)
+- Variables and mixins for reusable design tokens
+- Easier file splitting for maintainable styles
+- Cleaner syntax compared to raw CSS
 
 ---
 
@@ -216,7 +216,7 @@ SCSS was chosen for its:
 
 All HTML/CSS was refactored using the **BEM methodology** for:
 
--   Predictable, scalable naming
--   Easier class targeting in SCSS
--   Lower chance of style conflicts
--   Cleaner developer hand-off
+- Predictable, scalable naming
+- Easier class targeting in SCSS
+- Lower chance of style conflicts
+- Cleaner developer hand-off
