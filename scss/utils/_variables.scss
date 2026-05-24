@@ -133,7 +133,7 @@ $fw-xbold: 900;
 ======================================*/
 
 // Desktop
-$margin-header: 48px 15% 7.81rem 15%;
+$margin-header: 48px 15% 10px 15%;
 $margin-hero: 7.81rem 15% 7.81rem 15%;
 $margin-cta-section: 7.81rem 10% 4rem 10%;
 $margin-intro-text: 7.81rem 15% 7.81rem 15%;
@@ -149,3 +149,17 @@ $margin-cta-section-mobile: 50px 5% 50px 5%;
 
 // Contact us
 $contact-margin-header: 1.25rem 15% 3rem 15%;
+
+/*======================================
+*            THEME VARIABLES           *
+======================================*/
+
+:root {
+	--bg-color: #{$Black-500_BG};
+	--toggle-border: #{$Black-700};
+	--toggle-circle: #{$Black-700};
+}
+
+body.light-mode {
+	--bg-color: #{$off-white};
+}

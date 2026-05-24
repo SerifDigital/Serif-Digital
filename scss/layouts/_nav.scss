@@ -24,6 +24,10 @@ nav ul li a:hover {
 	color: $yellow;
 }
 
+body.light-mode nav a {
+	color: $Black-700;
+}
+
 /* stroke */
 nav.stroke ul li a,
 nav.fill ul li a {
@@ -80,4 +84,9 @@ nav.fill ul li a:hover:after {
 	@include breakpoint-mobile {
 		display: inline-block;
 	}
+}
+
+.active-page {
+	opacity: 0.3;
+	pointer-events: none;
 }

@@ -4,8 +4,9 @@ html {
 
 body {
 	color: $White_text;
-	background: $Black-500_BG;
-	-webkit-text-size-adjust: 100%; //fix for iOS
+	background: var(--bg-color);
+	-webkit-text-size-adjust: 100%;
+	transition: background-color 0.3s ease;
 }
 
 //HERO SECTION
@@ -78,6 +79,11 @@ body {
 	}
 }
 
+body.light-mode .intro-text p {
+	color: $Black-700;
+	font-weight: $fw-normal;
+}
+
 .hero-fullstop {
 	color: $yellow;
 	margin-left: 8px;
@@ -113,6 +119,11 @@ body {
 	.span-space {
 		padding: 20px;
 	}
+}
+
+body.light-mode .featured-heading {
+	color: $Black-700;
+	border-bottom: 4px solid $Black-700;
 }
 
 .fa-solid,

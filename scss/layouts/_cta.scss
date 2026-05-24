@@ -97,7 +97,6 @@
 				color: $yellow;
 				transition: 0.3s ease;
 				width: 100%;
-				color: black;
 
 				&:hover {
 					color: $darker-grey;
@@ -123,14 +122,10 @@
 }
 
 //Icon
-.material-symbols-outlined {
-	font-size: 55px;
-	text-align: center;
-	align-self: center;
+body.light-mode .cta-wrapper__left p {
+	color: $White_text;
 }
 
-#cta-link {
-	color: $y-tint-500;
-	text-decoration: underline;
-	cursor: pointer;
+body.light-mode .cta-container {
+	background-color: $off-white;
 }

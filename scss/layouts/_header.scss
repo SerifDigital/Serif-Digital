@@ -4,9 +4,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding-bottom: 16px;
-
 	border-bottom: $White_text solid 8px;
-
 	@include breakpoint-mobile {
 		margin: $margin-header-mobile;
 	}
@@ -16,8 +14,62 @@
 	}
 }
 
+body.light-mode .header {
+	border-bottom: $Black-700 solid 8px;
+}
+
 .main-logo-link {
 	&:hover {
 		cursor: pointer;
 	}
+}
+
+// Theme toggle button
+.theme-toggle-container {
+	margin: 2rem 15% 0 15%;
+	display: flex;
+	justify-content: flex-end;
+
+	@include breakpoint-mobile {
+		margin: 2rem 5% 0 5%;
+	}
+}
+
+.theme-toggle-container .theme-toggle {
+	width: 52px;
+	height: 28px;
+	padding: 3px;
+	border: 2px solid $White_text;
+	border-radius: 999px;
+	background: transparent;
+	cursor: pointer;
+	font-size: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.theme-toggle__circle {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: $White_text;
+	transition: transform 0.3s ease;
+}
+
+body.light-mode .theme-toggle {
+	border-color: $Black-700;
+}
+
+body.light-mode .theme-toggle__circle {
+	background: $Black-700;
+	transform: translateX(22px);
+}
+
+body.light-mode .theme-toggle__circle {
+	transform: translateX(22px);
+}
+
+body.light-mode .theme-toggle__circle {
+	transform: translateX(22px);
 }

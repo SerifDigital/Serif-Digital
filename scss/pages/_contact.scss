@@ -17,6 +17,7 @@
 
 .contact-hero {
 	text-align: center;
+	margin-top: 50px;
 
 	@include breakpoint-mobile {
 		padding: 8px;
@@ -40,6 +41,10 @@
 		margin-bottom: 70px;
 		font-size: 18px;
 	}
+}
+
+body.light-mode .contact-hero p {
+	color: $Black-700;
 }
 
 // FORM
@@ -103,11 +108,13 @@ input {
 
 	&:focus {
 		background-color: $Grey-300;
-		border-bottom: 2px solid $red-arterial-blood;
+		border-bottom: 2px solid $bg-tint-600;
 		padding-left: 10px;
 		// border: 2px solid $red-arterial-blood;
-		outline: 2px $yellow solid;
-		box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+		outline: 1px $yellow solid;
+		box-shadow:
+			rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+			rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 	}
 }
 
@@ -130,14 +137,14 @@ label {
 }
 
 .message-input-field {
-	height: 140px;
+	height: 160px;
 	padding: 10px;
 	font-family: $ff-p;
 	transition: 0.2s ease-in;
 	border: 2px black solid;
 
 	&:focus {
-		outline: 2px $red-arterial-blood solid;
+		outline: 2px $bg-tint-600 solid;
 	}
 
 	@include breakpoint-mobile {
